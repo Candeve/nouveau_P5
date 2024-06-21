@@ -1,29 +1,39 @@
-.image-card {
-    width: 400px;
-    display: block;
+.card-gallery {
+    padding: 20px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
 }
 
-.logementsPA {
-    background-color: grey;
-    margin: 70px;
-}
 
-.fiche-logement {
-    position: relative;
-    display: flex;
-}
 
 .fig-image {
     position: relative;
+    width: 300px; 
 }
 
+.image-card {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
 
 .titre-image {
     position: absolute;
     bottom: 10px;
-    left: 10px; 
+    left: 10px;
     color: white;
     padding: 5px 10px;
     border-radius: 3px;
-    font-size: 16px; 
+    font-size: 16px;
+}
+
+.logementsPA {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: grey;
+
 }

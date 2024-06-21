@@ -1,4 +1,9 @@
 .gallery-wrapper {
+
+flex-direction: row;
+flex-wrap: wrap;
+margin-top: 90px;
 display: flex;
-justify-content: center;
-}
+padding-left: 400px;
+padding-right: 400px;
+}    

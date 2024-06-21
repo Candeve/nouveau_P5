@@ -1,0 +1,16 @@
+.footerAll {
+    background-color: black;
+}
+
+.texte-footer {
+    color: white;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}

@@ -1,4 +1,4 @@
-// src/components/Header/header.jsx
+
 import './header.scss';
 import logo from '../../assets/logo.png';
 import React from 'react';

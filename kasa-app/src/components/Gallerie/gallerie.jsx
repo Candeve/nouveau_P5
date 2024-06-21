@@ -5,6 +5,7 @@ import './gallerie.scss';
 
 function Gallerie() {
     return (
+        
         <span className="gallery-wrapper">
         <div className="logementsPA">
             {annoncesdesLogements.map(({ id, cover, title }) => (
@@ -12,6 +13,7 @@ function Gallerie() {
             ))}
         </div>
         </span>
+        
     );
 }
 

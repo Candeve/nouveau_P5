@@ -5,14 +5,14 @@ import PropTypes from 'prop-types';
 
 function Cards({ cover, title }) {
     return (
-        <div className="card-gallery">
+        
         <div className="fiche-logement">
             <figure className='fig-image'>
                 <img src={cover} alt={title} className="image-card" />
                 <figcaption className='titre-image'>{title}</figcaption>
             </figure>
         </div>
-        </div>
+        
     );
 }
 Cards.propTypes = {
