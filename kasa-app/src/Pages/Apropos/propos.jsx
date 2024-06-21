@@ -1,9 +1,15 @@
 import React from "react";
-// importer la bannière ici ?
+import ProposBanniere from '../../components/ProposBanniere/aproposbanniere';
+import Header from '../../components/Header/header'
+import Footer from '../../components/Footer/footer'
+
+
 function Apropos() {
     return (
       <div>
-        <aBannierepropos />
+        <Header />
+        <ProposBanniere />
+        <Footer />
       </div>
     );
   }

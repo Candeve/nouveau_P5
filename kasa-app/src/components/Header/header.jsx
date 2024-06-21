@@ -15,9 +15,7 @@ function Header() {
           
             <Link to="/" className='nav-link'>Accueil
             </Link>
-
-          
-            <Link to="/A_propos" className='nav-link'>A propos
+            <Link to="/Apropos" className='nav-link'>A propos
             </Link>
 
         </ul>
