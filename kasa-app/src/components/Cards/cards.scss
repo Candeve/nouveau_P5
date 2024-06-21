@@ -1,0 +1,29 @@
+.image-card {
+    width: 400px;
+    display: block;
+}
+
+.logementsPA {
+    background-color: grey;
+    margin: 70px;
+}
+
+.fiche-logement {
+    position: relative;
+    display: flex;
+}
+
+.fig-image {
+    position: relative;
+}
+
+
+.titre-image {
+    position: absolute;
+    bottom: 10px;
+    left: 10px; 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 16px; 
+}
