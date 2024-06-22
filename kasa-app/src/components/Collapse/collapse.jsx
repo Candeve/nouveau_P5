@@ -24,7 +24,7 @@ function Collapse({ title, children }) {
         <div className="collapse-header" onClick={toggleCollapse}>
           <h2>{title}</h2>
           <button>
-            <img src={isOpen ? vectorDown : vectorUp} alt="toggle icon" />
+            <img src={isOpen ? vectorDown : vectorUp} alt="icone collapse" />
           </button>
         </div>
         <div ref={contentRef} className={`collapse-content ${isOpen ? 'open' : ''}`}>

@@ -1,0 +1,28 @@
+.error404-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  
+  .error404-content {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .error404-content h1 {
+    font-size: 6rem;
+    color: #ff6b6b;
+  }
+  
+  .error404-content p {
+    font-size: 1.5rem;
+    color: #ff6b6b;
+  }
+  
+  .error404-content a {
+    font-size: 1rem;
+    color: #ff6b6b;
+    text-decoration: none;
+  }
+  
