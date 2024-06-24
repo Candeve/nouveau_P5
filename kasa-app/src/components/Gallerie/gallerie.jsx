@@ -5,15 +5,13 @@ import './gallerie.scss';
 
 function Gallerie() {
     return (
-        
         <span className="gallery-wrapper">
-        <div className="logementsPA">
-            {annoncesdesLogements.map(({ id, cover, title }) => (
-                <Cards key={id} cover={cover} title={title} />
-            ))}
-        </div>
+            <div className="logementsPA">
+                {annoncesdesLogements.map(({ id, cover, title }) => (
+                    <Cards key={id} id={id} cover={cover} title={title} />
+                ))}
+            </div>
         </span>
-        
     );
 }
 

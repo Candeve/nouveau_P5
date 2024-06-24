@@ -1,0 +1,66 @@
+.logement-detail {
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+        .logement-image {
+            width: calc(50% - 10px);
+            height: auto;
+            border-radius: 8px;
+        }
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: 0.5em 0;
+    }
+
+    .location {
+        font-size: 1.2em;
+        color: #888;
+    }
+
+    .tags {
+        margin: 1em 0;
+        .tag {
+            background-color: #ff6060;
+            color: white;
+            padding: 0.5em;
+            margin-right: 0.5em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .host-info {
+        display: flex;
+        align-items: center;
+        margin: 1em 0;
+        .host-picture {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 1em;
+        }
+    }
+
+    .rating {
+        display: flex;
+        margin: 1em 0;
+        .star {
+            width: 20px;
+            height: 20px;
+            margin-right: 0.5em;
+        }
+    }
+
+    .description, .equipments {
+        margin: 1em 0;
+        .collapse-content {
+            
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+    }
+}
