@@ -4,15 +4,15 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 500px; /* Définir une hauteur fixe pour le carrousel */
+    height: 500px; 
     max-width: 100%;
     overflow: hidden;
     margin-bottom: 20px;
   
     .carrousel-image {
       width: 100%;
-      height: 100%; /* Fixer la hauteur de l'image à celle du carrousel */
-      object-fit: cover; /* Assure que les images conservent leur ratio d'aspect et remplissent le conteneur */
+      height: 100%; 
+      object-fit: cover; 
       border-radius: 8px;
     }
   
@@ -26,11 +26,11 @@
       z-index: 10;
   
       &.arrow-left {
-        left: 20px; /* Ajustez la position à gauche */
+        left: 20px; 
       }
   
       &.arrow-right {
-        right: 20px; /* Ajustez la position à droite */
+        right: 20px; 
       }
     }
   

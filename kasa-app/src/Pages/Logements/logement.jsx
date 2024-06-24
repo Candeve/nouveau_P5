@@ -1,5 +1,5 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import annoncesdesLogements from '../../annonces/logements';
 import Header from '../../components/Header/header';
 import Footer from '../../components/Footer/footer';
@@ -12,10 +12,17 @@ import emptyStar from '../../assets/empty_star.png';
 
 function Logement() {
     const { id } = useParams();
+    const navigate = useNavigate();
     const logement = annoncesdesLogements.find((logement) => logement.id === id);
 
+    useEffect(() => {
+        if (!logement) {
+            navigate('/error404');
+        }
+    }, [logement, navigate]);
+
     if (!logement) {
-        return <div>Logement non trouvé</div>;
+        return null;
     }
 
     return (
