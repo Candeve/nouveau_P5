@@ -1,9 +1,48 @@
-.gallery-wrapper {
+.gallerie-container {
+    background-color: #F6F6F6;
+    padding: 80px 80px;
+    border-radius: 20px;
+    margin: 20px;
+}
 
-flex-direction: row;
-flex-wrap: wrap;
-margin-top: 90px;
-display: flex;
-padding-left: 400px;
-padding-right: 400px;
-}    
+.gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Changer space-between à space-evenly */
+}
+
+.fiche-logement {
+    flex: 0 1 30%;
+    margin: 10px; /* Ajuster les marges */
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 1/1;
+}
+
+.fig-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.image-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titre-image {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}

@@ -5,6 +5,7 @@ import Home from './Pages/Home/home'
 import Apropos from './Pages/Apropos/propos'
 import Error404 from './Pages/Error404/error404'
 import Logements from './Pages/Logements/logement'
+import './Styles/global.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
