@@ -1,16 +1,24 @@
 .footerAll {
     background-color: black;
-}
-
-.texte-footer {
-    color: white;
-}
-
-.footer-wrapper {
+    padding: 20px 0;
+  }
+  
+  .footer-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     flex-direction: column;
-    align-content: center;
     align-items: center;
-}
+    justify-content: center;
+  }
+  
+  .logo-footer {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .texte-footer {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin: 0;
+  }
+  
