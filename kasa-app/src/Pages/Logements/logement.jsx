@@ -30,43 +30,51 @@ function Logement() {
             <Header />
             <div className="logement-detail">
                 <Carrousel pictures={logement.pictures} />
-                <h1>{logement.title}</h1>
-                <p className="location">{logement.location}</p>
-                <div className="tags">
-                    {logement.tags.map((tag, index) => (
-                        <span key={index} className="tag">{tag}</span>
-                    ))}
-                </div>
-                <div className="host-info">
-                    <img src={logement.host.picture} alt={logement.host.name} className="host-picture" />
-                    <p>{logement.host.name}</p>
-                </div>
-                <div className="rating">
-                    {[...Array(5)].map((star, index) => {
-                        const ratingValue = index + 1;
-                        return (
-                            <img
-                                key={index}
-                                src={ratingValue <= logement.rating ? fullStar : emptyStar}
-                                alt={`${ratingValue} star`}
-                                className="star"
-                            />
-                        );
-                    })}
-                </div>
-                <div className="description">
-                    <Collapse title="Description">
-                        <p>{logement.description}</p>
-                    </Collapse>
-                </div>
-                <div className="equipments">
-                    <Collapse title="Équipements">
-                        <ul>
-                            {logement.equipments.map((equipment, index) => (
-                                <li key={index}>{equipment}</li>
+                <div className="info-container">
+                    <div className="main-info">
+                        <h1>{logement.title}</h1>
+                        <p className="location">{logement.location}</p>
+                        <div className="tags">
+                            {logement.tags.map((tag, index) => (
+                                <span key={index} className="tag">{tag}</span>
                             ))}
-                        </ul>
-                    </Collapse>
+                        </div>
+                    </div>
+                    <div className="host-rating-container">
+                        <div className="host-info">
+                            <img src={logement.host.picture} alt={logement.host.name} className="host-picture" />
+                            <p className="host">{logement.host.name}</p>
+                        </div>
+                        <div className="rating">
+                            {[...Array(5)].map((star, index) => {
+                                const ratingValue = index + 1;
+                                return (
+                                    <img
+                                        key={index}
+                                        src={ratingValue <= logement.rating ? fullStar : emptyStar}
+                                        alt={`${ratingValue} star`}
+                                        className="star"
+                                    />
+                                );
+                            })}
+                        </div>
+                    </div>
+                </div>
+                <div className="description-equipments-container">
+                    <div className="description logement-collapse">
+                        <Collapse title="Description">
+                            <p>{logement.description}</p>
+                        </Collapse>
+                    </div>
+                    <div className="equipments logement-collapse">
+                        <Collapse title="Équipements">
+                            <ul>
+                                {logement.equipments.map((equipment, index) => (
+                                    <li key={index}>{equipment}</li>
+                                ))}
+                            </ul>
+                        </Collapse>
+                    </div>
                 </div>
             </div>
             <Footer />

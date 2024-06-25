@@ -1,78 +1,154 @@
 .logement-detail {
     font-family: 'Montserrat', sans-serif;
-    .images {
+    padding: 0 70px;
+
+    .info-container {
         display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-bottom: 20px;
-        .logement-image {
-            width: calc(50% - 10px);
-            height: auto;
-            border-radius: 8px;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .main-info {
+        max-width: 60%;
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2em;
+            margin: 0.5em 0;
+            color: #FF6060;
+            font-weight: 500;
         }
-    }
-
-    h1 {
-        font-size: 2em;
-        margin: 0.5em 0;
-        color: #FF6060;
-    }
-    p {
-        color: #FF6060;
-    }
-    
-
-    .location {
-        font-size: 1.2em;
-        color: #000000;
-    }
-    
-    li {
-        list-style-type: none;
-        color: #FF6060;
-
-    }
-
-    .tags {
-        margin: 1em 0;
-        .tag {
-            background-color: #ff6060;
-            color: white;
-            padding: 0.5em;
-            margin-right: 0.5em;
-            border-radius: 5px;
-            cursor: pointer;
+        
+        .location {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2em;
+            color: #000000;
+            font-weight: 500;
         }
-    }
-
-    .host-info {
-        display: flex;
-        align-items: center;
-        margin: 1em 0;
-        .host-picture {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-right: 1em;
-        }
-    }
-
-    .rating {
-        display: flex;
-        margin: 1em 0;
-        .star {
-            width: 20px;
-            height: 20px;
-            margin-right: 0.5em;
-        }
-    }
-
-    .description, .equipments {
-        margin: 1em 0;
-        .collapse-content {
+        
+        .tags {
+            margin: 1em 0;
+            display: flex;
+            flex-wrap: wrap;
             
+            .tag {
+                font-family: 'Montserrat', sans-serif;
+                background-color: #ff6060;
+                color: white;
+                padding: 0.5em;
+                margin-right: 0.5em;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .host-rating-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 18px;
+        
+        .host-info {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            padding-bottom: 15px;
+            .host-picture {
+                width: 70px;
+                border-radius: 50%;
+            }
+            .host {
+                font-family: 'Montserrat', sans-serif;
+                color: #FF6060;
+                font-size: 22px;
+                font-weight: 500;
+                padding-right: 20px;
+            }
+        }
+
+        .rating {
+            display: flex;
+            margin-top: 10px;
+            .star {
+                width: 28px;
+                height: 25px;
+                padding: 10px;
+            }
+        }
+    }
+
+    .description-equipments-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+
+        .description, .equipments {
+            width: 48%;
+        }
+
+        .logement-collapse .collapse-container {
+            font-family: 'Montserrat', sans-serif;
             background-color: #f5f5f5;
             border-radius: 5px;
+            padding: 0;
         }
+    }
+}
+
+ul {
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    
+}
+
+
+.carrousel {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 25px;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .left-arrow, .right-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    .left-arrow {
+        left: 10px;
+    }
+
+    .right-arrow {
+        right: 10px;
+    }
+
+    .slide-number {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
     }
 }

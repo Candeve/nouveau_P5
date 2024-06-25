@@ -26,10 +26,11 @@
     background: none;
     border: none;
     padding: 0;
+    cursor: pointer;
     
     img {
       width: 20px;
-      height: 20px;
+      
       transition: transform 0.3s ease; 
     }
   }
@@ -43,12 +44,14 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease, padding 0.3s ease;
-  background-color: #ffecec; 
+  background-color: #F6F6F673; 
 }
 
-.collapse-content-inner {
-  padding: 15px; 
+.collapse-content-inner, p {
+  padding: 8px;
+  margin: 0;
   font-family: 'Montserrat', sans-serif; 
+  font-weight: 400
 }
 
 .collapse-content.open {

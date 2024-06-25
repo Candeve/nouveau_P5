@@ -20,9 +20,10 @@
       .nav-link {
         text-decoration: none;
         color: black;
-        font-size: 24px;
+        font-size: 20px;
         margin-left: 57px;
         position: relative;
+        font-weight: 500;
         
         &.active {
           color: black;
@@ -31,8 +32,8 @@
             content: '';
             position: absolute;
             left: 0;
-            bottom: -5px;
-            height: 3px;
+            bottom: -2px;
+            height: 2px;
             width: 100%;
             background-color: black;
           }
