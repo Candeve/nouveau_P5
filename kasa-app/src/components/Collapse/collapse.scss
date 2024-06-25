@@ -4,39 +4,42 @@
   overflow: hidden;
   padding: 0 70px;
   margin-bottom: 50px;
+
+  @media (max-width: 768px) {
+      padding: 0 20px;
+  }
 }
 
 .collapse-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px; 
-  background-color: #ff6b6b; 
-  color: white; 
+  padding: 15px;
+  background-color: #ff6b6b;
+  color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  border-radius: 5px; 
-  
+  border-radius: 5px;
+
   h2 {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif; 
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
   }
 
   button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    
-    img {
-      width: 20px;
-      
-      transition: transform 0.3s ease; 
-    }
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+
+      img {
+          width: 20px;
+          transition: transform 0.3s ease;
+      }
   }
 
   &:hover {
-    background-color: #ff5252; 
+      background-color: #ff5252;
   }
 }
 
@@ -44,16 +47,15 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease, padding 0.3s ease;
-  background-color: #F6F6F673; 
+  background-color: #F6F6F673;
 }
 
 .collapse-content-inner, p {
-  padding: 8px;
   margin: 0;
-  font-family: 'Montserrat', sans-serif; 
-  font-weight: 400
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 .collapse-content.open {
-  max-height: 500px; 
+  max-height: 500px;
 }

@@ -1,44 +1,84 @@
 .header-kasa {
     font-family: 'Montserrat', sans-serif;
-    
+
     .headnavcontainer {
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-      padding: 30px 70px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 70px;
     }
 
-  
-    .navbar {
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-      }
-  
-      .nav-link {
-        text-decoration: none;
-        color: black;
-        font-size: 20px;
-        margin-left: 57px;
-        position: relative;
-        font-weight: 500;
-        
-        &.active {
-          color: black;
-          
-          &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            height: 2px;
-            width: 100%;
-            background-color: black;
-          }
-        }
-      }
+    .logo-kasa {
+        width: 135px;
     }
-  }
-  
+
+    .navbar {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            margin-left: 57px;
+            position: relative;
+            font-weight: 500;
+
+            &.active {
+                color: black;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    height: 2px;
+                    width: 100%;
+                    background-color: black;
+                }
+            }
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .headnavcontainer {
+            padding: 30px 17px;   
+        }
+
+        .logo-kasa {
+            width: 130px; 
+        }
+
+        .navbar ul {
+            flex-direction: row; 
+        }
+
+        .nav-link {
+            font-size: 15px !important; 
+            margin-left: 20px; 
+            text-transform: uppercase; 
+        }
+    }
+
+    @media (max-width: 480px) {
+        .headnavcontainer {
+            padding: 30px 17px;  
+        }
+
+        .logo-kasa {
+            width: 90px; 
+        }
+
+        .nav-link {
+            font-size: 15px !important; 
+            margin-left: 10px; 
+            text-transform: uppercase; 
+        }
+    }
+}

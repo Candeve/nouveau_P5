@@ -27,3 +27,31 @@
     -1px  1px 0 #000,
      1px  1px 0 #000;
 }
+
+@media (max-width: 768px) {
+    .BanniereHP {
+        border-radius: 10px;
+        width: 100%;
+        height: 110px;
+    }
+
+    .titreBanniere {
+        font-size: 24px;
+    }
+
+    .BanniereHomePage{
+        padding: 20px 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .BanniereHP {
+        border-radius: 10px;
+        width: 100%;
+        height: 110px;
+    }
+
+    .titreBanniere {
+        font-size: 16px;
+    }
+}

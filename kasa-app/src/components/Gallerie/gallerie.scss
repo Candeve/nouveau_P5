@@ -47,3 +47,29 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
 }
+
+
+@media (max-width: 1200px) {
+    .fiche-logement {
+        flex: 0 1 30%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .gallerie-container {
+        padding: 40px 40px;
+        margin: 20px;
+    }
+
+    .fiche-logement {
+        flex: 0 1 45%;  
+        margin: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fiche-logement {
+        flex: 0 1 100%;  
+        margin: 10px;
+    }
+}

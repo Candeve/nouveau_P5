@@ -5,9 +5,35 @@
     object-fit: cover;
     opacity: 90%;
     filter: brightness(50%);
-    
 }
 
-.BanniereProposPage{
+.BanniereProposPage {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
     padding: 30px 70px;
+}
+
+
+@media (max-width: 768px) {
+    .BanniereAP {
+        border-radius: 10px; 
+        height: 110px; 
+    }
+
+    .BanniereProposPage {
+        padding: 20px 17px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .BanniereAP {
+        border-radius: 10px; 
+        height: 100px; 
+    }
+
+    .BanniereProposPage {
+        padding: 20px 17px; 
+    }
 }
