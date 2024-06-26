@@ -59,3 +59,11 @@
 .collapse-content.open {
   max-height: 500px;
 }
+
+.collapseAll {
+  padding: 0 100px;
+
+  @media (max-width: 768px) {
+    padding: 0; 
+  }
+}

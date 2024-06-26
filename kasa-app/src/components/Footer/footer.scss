@@ -2,6 +2,7 @@
     background-color: black;
     padding: 20px 0;
     width: 100%;
+    
 }
 
 .footer-wrapper {
@@ -26,14 +27,21 @@
     font-weight: 500;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .footer-wrapper {
-        padding-bottom: 40px;
+        padding-bottom: 54px;
         margin-top: 20px;
     }
 
     .texte-footer {
         font-size: 12px;
+    }
+
+    .footerAll {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        
     }
 }
