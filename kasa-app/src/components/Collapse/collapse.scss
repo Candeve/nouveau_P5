@@ -6,7 +6,8 @@
   margin-bottom: 50px;
 
   @media (max-width: 768px) {
-      padding: 0 20px;
+    padding: 0 20px;
+    margin-bottom: 30px; 
   }
 }
 
@@ -22,24 +23,28 @@
   border-radius: 5px;
 
   h2 {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
   }
 
   button {
-      background: none;
-      border: none;
-      padding: 0;
-      cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 
-      img {
-          width: 20px;
-          transition: transform 0.3s ease;
-      }
+    img {
+      width: 20px;
+      transition: transform 0.3s ease;
+    }
   }
 
   &:hover {
-      background-color: #ff5252;
+    background-color: #ff5252;
+  }
+
+  @media (max-width: 768px) {
+    padding: 8px; 
   }
 }
 
@@ -64,6 +69,13 @@
   padding: 0 100px;
 
   @media (max-width: 768px) {
-    padding: 0; 
+    padding: 0;
+  }
+}
+
+@media (min-width: 1201px) {
+  .collapseAll {
+    max-width: 1200px;
+    margin: 0 auto; 
   }
 }

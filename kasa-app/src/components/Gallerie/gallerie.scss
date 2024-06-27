@@ -1,8 +1,8 @@
 .gallerie-container {
     background-color: #F6F6F6;
-    padding: 80px 80px;
+
     border-radius: 20px;
-    margin: 70px;
+    margin: 70px auto;
 }
 
 .gallery-wrapper {
@@ -71,5 +71,11 @@
     .fiche-logement {
         flex: 0 1 100%;  
         margin: 10px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .gallerie-container {
+        max-width: 1200px; 
     }
 }

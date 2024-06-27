@@ -1,10 +1,8 @@
 .logement-detail {
     font-family: 'Montserrat', sans-serif;
     padding: 0 70px;
+    margin: 0 auto; 
 
-    @media (max-width: 768px) {
-        padding: 0 10px;
-    }
 
     .info-container {
         display: flex;
@@ -38,7 +36,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 1.2em;
             color: #000000;
-            font-weight: 500;
+            font-weight: 600;
 
             @media (max-width: 768px) {
                 font-size: 1em;
@@ -58,10 +56,15 @@
                 font-family: 'Montserrat', sans-serif;
                 background-color: #ff6060;
                 color: white;
-                padding: 0.5em;
-                margin-right: 0.5em;
+                padding: 0.4em;
+                margin-right: 0.8em;
                 border-radius: 10px;
                 cursor: pointer;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
             }
         }
     }
@@ -82,6 +85,7 @@
             align-items: center;
             flex-direction: row-reverse;
             padding-bottom: 15px;
+            
             .host-picture {
                 width: 70px;
                 border-radius: 50%;
@@ -100,8 +104,9 @@
                 @media (max-width: 768px) {
                     font-size: 18px;
                     display: inline-block;
-                    white-space: pre-wrap;
-                    padding-left: 110px;
+                    width: 100%;
+                    text-align: center;
+                    white-space: pre-line; 
                 }
             }
         }
@@ -115,9 +120,9 @@
                 padding: 10px;
 
                 @media (max-width: 768px) {
-                    width: 20px;
-                    height: 20px;
-                    padding: 5px;
+                    width: 17px;
+                    height: 19px;
+                    padding: 3px;
                 }
             }
         }
@@ -145,6 +150,14 @@
             padding: 0;
         }
     }
+    @media (min-width: 1201px) {
+        max-width: 1200px; 
+    }
+}
+
+.collapse-content-inner, p {
+    padding: 10px;
+    font-weight: 500;
 }
 
 ul {
@@ -207,10 +220,23 @@ ul {
     }
 }
 
-/* Responsive Styles */
+
 @media (max-width: 1200px) {
     .carrousel {
         height: 400px;
+    }
+    .description-equipments-container {
+        flex-direction: column;
+    }
+    .logement-detail .info-container{
+        flex-direction: column;
+    }
+    .logement-detail .host-rating-container {
+        flex-direction: row-reverse;
+    }
+    .logement-detail {
+
+        padding: 0 17px;
     }
 }
 
@@ -218,20 +244,28 @@ ul {
     .carrousel {
         height: 300px;
     }
-
-    .left-arrow, .right-arrow {
-        padding: 5px;
-    }
-
     .description-equipments-container {
         flex-direction: column;
     }
-
-    .logement-detail .info-container {
+    .logement-detail .info-container{
         flex-direction: column;
     }
-
+    .left-arrow, .right-arrow {
+        padding: 5px;
+    }
     .logement-detail .host-rating-container {
         flex-direction: row-reverse;
     }
+    .logement-detail {
+
+        padding: 0 17px;
+    }
+
+    .host-info {
+        margin-left: 85px;
+    }
+    .host {
+        padding-right: 12px;  
+    }
+    
 }

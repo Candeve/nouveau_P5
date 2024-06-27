@@ -13,8 +13,14 @@
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     padding: 30px 70px;
+    margin: 0 auto; 
 }
 
+@media (min-width: 1201px) {
+    .BanniereProposPage {
+        max-width: 1200px; 
+    }
+}
 
 @media (max-width: 768px) {
     .BanniereAP {
