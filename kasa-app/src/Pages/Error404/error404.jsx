@@ -1,10 +1,13 @@
-
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../../components/Header/header';
 import Footer from '../../components/Footer/footer';
 import './error404.scss';
 
 function Error404() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="error404-container">
       <Header />

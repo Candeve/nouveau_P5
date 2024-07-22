@@ -19,6 +19,7 @@ function Logement() {
         if (!logement) {
             navigate('/error404');
         }
+        window.scrollTo(0, 0);
     }, [logement, navigate]);
 
     if (!logement) {

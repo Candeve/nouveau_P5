@@ -9,7 +9,6 @@
     overflow: hidden;
     margin-bottom: 20px;
 
-
     .arrow {
         position: absolute;
         top: 50%;
@@ -46,10 +45,12 @@
         animation: fadeIn 0.5s ease-in-out;
     }
 
-  
     @media (max-width: 1200px) {
         height: 335px;
         width: 255px;
+        .image-counter {
+            display: none;
+        }
     }
 
     @media (max-width: 768px) {
@@ -70,6 +71,10 @@
         .logement-detail {
             padding: 0 20px;
         }
+
+        .image-counter {
+            display: none;
+        }
     }
 
     @media (max-width: 480px) {
@@ -82,11 +87,10 @@
         }
 
         .image-counter {
-            bottom: 5px;
-            padding: 3px 7px;
+            display: none;
         }
         .carrousel .arrow.arrow-right {
-            right: 40px!important;
+            right: 40px !important;
         }
         .carrousel .arrow.arrow-left {
             left: 40px !important;

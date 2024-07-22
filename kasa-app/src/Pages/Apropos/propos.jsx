@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProposBanniere from '../../components/ProposBanniere/aproposbanniere';
-import Header from '../../components/Header/header'
-import Footer from '../../components/Footer/footer'
+import Header from '../../components/Header/header';
+import Footer from '../../components/Footer/footer';
 import Collapse from '../../components/Collapse/collapse';
 
 function Apropos() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
       <div id="root">
         <Header />
@@ -29,6 +33,6 @@ function Apropos() {
         <Footer />
       </div>
     );
-  }
+}
 
 export default Apropos;
